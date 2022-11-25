@@ -1,0 +1,124 @@
+/* buraya her tarafta kullanılacak class'lar eklenir
+örneğin bir çok h1 vs gibi etiketleri text center yapmak için tek bir adet class olusturabiliriz burada*/
+
+.text-center{
+    text-align: center;
+}
+
+.heading-small{
+    font-size: 1.25rem;
+}
+.heading-medium{
+    font-size: 1.5rem;
+}
+.heading-big{
+    font-size: 1.75rem;
+}
+
+.bg-dark-blue{
+    background: #07121b;
+}
+.bg-light-blue{
+    background: #336ea2;
+}
+
+/*buttons(butonları yaptıktan sonra ekledik(yaptıgımızı copy paste ettim).
+ sitenin diğer bölümlerinde kullanırız diye.. */
+.btn{
+    margin-top:1.25rem;
+    /*backgrounda yer açarak büyüttü butonu */
+    padding: 0.8rem 3rem;
+    border: 2px solid rgb(112, 112, 111);
+    border-radius: 8pc;
+    /*yazı aralıkları*/
+    letter-spacing: 4px;
+    color: #fff;
+}
+/* bu renkte buton kullanırız diye(sitenin renginde) */
+.btn-primary{
+    background: #07121b;
+}
+.btn-primary:hover{
+    color:#07121b;
+    background: #ffff;
+}
+/* kırmızı buton için hazırladım örneğin*/
+.btn-red{
+    background: red;
+}
+.btn-red:hover{
+    color:red;
+    background: #ffff;
+}
+/*buton blogu fullesin istersek*/
+.btn-block{
+    width: 100%;
+    text-align: center;
+}
+
+.btn-contact-pre{
+    margin-bottom: 2.5rem;
+    color: #fff;
+    background: #07121b;
+}
+
+.btn-contact-pre:hover{
+    color:  #fff;
+    background: rgba(128, 255, 0, 0.5);
+}
+
+
+
+
+
+/* container: bunu oluşturumamızın sebebi; container yapmadan önce
+ozan balcı ile link yazıları sol ve sağ tarafa tamamen gitmiş durumdaydı 
+bunu değiştirmek için oluşturduk. Ayrıca 1100px'de sabit tuttuk,
+ekran büyüdüğünde 1100px' de sabit kalıyor ortalanmış duruyor.
+(globalde olusturmamızın sebebi bir çok yerde kullanabiliriz bunu)
+NOT: CONTAİNER OLUSTURDUK, indeks.html kısmında navbarı container
+class'ı olusturup kodlarını onun altına koymalıyız ki, container'dan
+navbarı yönetebilelim */
+
+.container{
+    /*navbar 1100px'den fazla olmasın diye yaptık */
+    max-width: 1100px;
+    /*geniş ekranda ortalayacak*/
+    margin: 0 auto; 
+}
+
+/*icon style */
+.icon-style{
+    background: rgb(255, 136, 0);
+    border: 0.5px solid rgb(255, 136, 0);
+    border-radius: 0.6pc;
+    color: black; 
+}
+
+
+/*forms*/
+
+.form-group{
+    padding: 0.25rem 0;   
+}
+/* label'lar inline'dır bu yüzden display: block vermemiz gerekiyor
+yani inline'dan block tipine dönüştürdük. Böylelikle görünümde düzeldi*/
+.form-group label{
+    display: block;
+}
+
+.form-control{
+    /*contact bölümünü max 700px ayarlamıstık
+    700'ün %100'ünü kaplasın diye yazdık */
+    width: 100%;
+    /* aralarda bosluk vardı kutular büyüsün diye padding arttırdık */
+    padding:0.5rem;
+    font-size: 1rem;
+     /* yazı kutusunun boyutunu kendimiz büyütememiz için*/
+    resize: none;
+    border-radius: 30px;
+}
+
+.colors{
+    background: rgb(241, 234, 163);
+}
