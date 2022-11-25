@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozan Balcı</title>
+    <meta name="keyword" content="Ozan Balcı">
+    <meta name="description" content="Python, Java, JavaScript">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <!--font awsome: icon içindi..-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- tablet için; sadece 768px oldugunda çalışacak-->
+    <link rel="stylesheet" media="(max-width:768px)" href="css/tablet.css">
+    <link rel="stylesheet" media="(max-width:560px)" href="css/mobile.css">
+</head>
+
+<body>
+    <!--navbar'ın bulundugu kısım.(header: baş)-->
+    <header class="bg-dark-blue">
+        <div class="container">
+            <!--nav bar olusturmak için <nav> açtık-->
+            <nav id="navbar">
+                <h1 class="heading-small">Ozan Balcı</h1>
+                <!-- linkler için düzensiz liste olusturduk-->
+                <ul>
+                    <!--liste olusturduk, etkiket verip  link ile navbardan tıklayıp gidebilelim gidebilelim diye-->
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#training">Eğitimler</a></li>
+                    <li><a href=" #courses">Kurslar</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--section bölümünde yeni html etiketlerini kullanacağız ve semantik etiketleri kullanacağız-->
+    <!-- section'a id=home vererek yukardaki link home'unu bağlandı.-->
+    <section id="home">
+        <img src="./images/ozabalci.jpg" alt="Ozan Balcı" width="220" height="220">
+        <div class="name text-center">
+            <!--global.css'de heading-big olusturmustuk-->
+            <h2 class="heading-big">Ozan Balcı</h2>
+            <p>Web Developer | Junior</p>
+        </div>
+        <a href="#courses" class="btn btn-primary">Kurslara Git</a>
+    </section>
+
+    <section id="training" class="bg-dark-blue">
+        <h3 class="text-center heading-medium"> Eğitimler</h3>
+        <!--eğitimde 3 tane bölüm isitoyurz ve bunların barınmasını div sağlıcak-->
+        <div class="items">
+            <!-- 3 taen bölümü div'le de yapardık ama kucuk olacağından article kullanadık-->
+            <article class="item">
+                <!--icon ekledik-->
+                <i class="fa fa-pencil-alt"></i>
+                <h3>Sınıf içi Eğitimler</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, illo!
+                </p>
+            </article>
+            <article class="item">
+                <!--icon ekledik-->
+                <i class="fa fa-pencil-alt"></i>
+                <h3>Online</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, illo!
+                </p>
+            </article>
+            <article class="item">
+                <!--icon ekledik-->
+                <i class="fa fa-pencil-alt"></i>
+                <h3>Konferanslar</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, illo!
+                </p>
+            </article>
+    </section>
+
+    <section id="courses">
+        <h3 class=" text-center heading-medium">Kurslar</h3>
+        <!-- kurs videolarını koyacağız ve bunlar geniş ekranda yayılmasın ortayabilelim diye container içine alıyoruz  -->
+        <div class="container">
+            <!-- tüm kursları kapsar: -->
+            <div class="courses">
+                <!-- her bir kursu olusturuyoruz:-->
+                <div class="course">
+                    <!-- kursların imagesi ayarlancak:  -->
+                    <div class="course-image">
+                        <img src="images/python.png" alt="Python">
+                        <span>%90 indirim</span>
+                    </div>
+                    <!--kursun bilgilerini kapsar-->
+                    <div class="course-info">
+                        <div class="title">Orta-İleri Düzey Python Geliştirici Kursu</div>
+                        <div class="discription">
+                            Orta seviyeden sektörün ileri seviyelerine kadar Python kursu.
+                        </div>
+                        <div class="instructor">
+                            Ozan Balcı
+                            <i class="fa-regular fa-star icon-style"></i>
+                        </div>
+                        <div class="rating">
+                            4.9/5 | (252217 Oylama)
+                        </div>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="course-image">
+                        <img src="images/js.png" alt="JavaScript">
+                        <span>%90 indirim</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="title">
+                            İleri Düzey JavaScript Geliştirici Kursu
+                        </div>
+                        <div class="discription">
+                            En temelden ileri düzeye JavaScript öğrenin.
+                        </div>
+                        <div class="instructor">
+                            Ozan Balcı
+                            <i class="fa-regular fa-star icon-style"></i>
+                        </div>
+                        <div class="rating">4.8/5 | (92217 Oylama)</div>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="course-image">
+                        <img src="images/cSharp.png" alt="C#">
+                        <span>%90 indirim</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="title">İleri Düzey C# Geliştirici Kursu
+                        </div>
+                        <div class="discription">En temelden ileri düzeye C# öğrenin.
+                        </div>
+                        <div class="instructor">Ozan Balcı
+                            <span class="icon">
+                                <i class="fa-regular fa-star icon-style"></i>
+                            </span>
+
+                        </div>
+                        <div class="rating">
+                            4.9/5 | (102217 Oylama)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-dark-blue">
+        <div class="contact-form">
+            <!-- form'u olsturma sebebimiz:  input yani örneğin isim girme inputu olusturmak için açtık -->
+            <form>
+                <h4 class="text-center heading-medium">Bana Ulaşın</h4>
+                <div class="form-group">
+                    <label for="name">İsim</label>
+                    <!-- id'yi name verdik ki label'e basıldıgında buraya odaklansın.-->
+                    <input type="text" class="form-control colors" name="name" id="name" placeholder="İsim">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-group colors" name="email" id="email" placeholder="E-mail">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mesaj</label>
+                    <!-- message girileceği için textarea olsturuldu-->
+                    <textarea name="message" id="message" class="form-control colors" rows="5" placeholder="Mesaj"></textarea>
+                </div>
+                <!-- yazılan mesajı sumbit(sunmak, göndermek) için yaptık-->
+                <button type="submit" class=" btn btn-block btn-contact-pre">Gönder</button>
+            </form>
+            
+            <ul>
+                <li> <a href="#"> <i class="fab fa-linkedin"></i></a></li>
+                <li> <a href="#"> <i class="fab fa-twitter"></i></a></li>
+                <li> <a href="#"> <i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
