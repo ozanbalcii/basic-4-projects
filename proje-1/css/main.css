@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+a{
+    /*atlı çizilen linkler gider */
+    text-decoration: none;
+    color:#ffff;
+}
+html{
+    font-family:"Open Sans", sans-serif;
+}
+
+/* Navbar section */
+#navbar{
+    /* navbar'da olan şeyler beyaz oldu */
+    color:#ffff;
+    /* navbar texleri yan yana geldi*/
+    display: flex;
+    /*navbarı düzenlemek için. (yatayda) */
+    justify-content:space-between;
+    /* dikeyde  tüm itemler ortalandı*/
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 70px;
+}
+
+#navbar ul{
+    /*listedeki notlar kalktı*/
+    list-style-type: none;
+    /* linkleri yan yana getirmek için:*/
+    display: flex;
+    align-items: center;
+}
+/* a'yı seçtik */
+#navbar ul li a{
+padding: 0.5rem;
+}
+/* hover: üstüne gelme metotu ile linkin üstüne gelince renk 
+değişiyor*/
+#navbar ul li a:hover{
+    background: #336ea2;
+    /*backgrounda border verdik ve kenerlarını yumuşattık*/
+    border-radius: 4px;
+}
+
+/* Home section */
+
+#home{
+    display:flex;
+    /*satır yonu sütun yapıldı */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*2*16=32px*/
+    padding: 2rem;
+    border-bottom:2px solid #062E51
+}
+
+/*foto stillendirmesi yapıldı: */
+  #home img{
+    /* içinde bulundugu blogu kaplasın*/
+    max-width: 100%;
+    /*max-width'e göre otomatik ayarlasın. */
+    height: auto;
+    /* fotoyu tam oval yapar */
+    border-radius: 100%;
+  }
+  
+  /* #home h2{
+    text-align: center;
+  } */
+
+  /* yukardaki yorum benim kod, aşağıdaki ile aynı çalışıyor
+  Ozan balcı Yazısını ortaladı FAKAT BUNU DİREKT HTML DE GLOBAL.CSS
+  DE HAZIRLADIKLARIMIZDAN YAPABİLİRİZ */
+
+  /* #home .name{
+    text-align: center;
+  } */
+    #home h2{
+    margin-bottom: 0.75rem;
+  } 
+
+  #home .name p{
+    opacity: 0.6;
+    font-style: italic;
+  }
+
+  /* burdakinlerin hepsini globalde yazıp indekste class olarak koyduk BUNLARA GEREK KALMADI */
+  /* #home a{
+    margin-top:1.25rem;
+    background: #336ea2; */
+    /*backgrounda yer açarak büyüttü butonu */
+    /* padding: 0.8rem 3rem; */
+    /* border: 2px solid rgb(255, 196, 0); */
+    /* border-radius: 8pc; */
+    /*yazı aralıkları*/
+    /* letter-spacing: 4px; */
+  /* }
+  #home a:hover{
+    color:#336ea2;
+    background: #ffff;
+  } */
+
+  /*training*/
+
+  #training{
+    color: #ffff;
+    padding:1rem;
+  }
+  #training .items{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin:0.5rem;
+  }
+
+  #training .items .item{
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  #training .items .item:hover{
+    background:rgba(119, 122, 119, 0.473) ; 
+    border: 2px solid rgba(0, 0, 0, 0.315);
+    border-radius: 8pc; 
+    color: rgb(255, 255, 255)
+  }
+
+  /*courses*/
+  /*<section id="courses"> burdaki courses. diğeri class */
+  #courses{
+    color: #333;
+    padding:1rem;
+  }
+  .courses{
+    display:flex;
+    flex-direction:column;
+    padding: 1rem;
+  }
+
+  .courses .course{
+   display:flex;
+   padding: 0.5rem;
+   margin-bottom: 10px;
+  }
+
+   .courses .course .course-image{
+    margin-right: 4rem;
+    position: relative;
+   } 
+
+   .courses .course .course-image img{
+   border-radius: 7pc;
+   } 
+
+   /* %90 yazısı için*/
+   .courses .course .course-image span{
+    background:  red;
+    padding: 0.25rem;
+    color: #fff;
+    border-radius: 4px;
+    /*çalışabilmesi için kapsayıcısında position: relative; olmalıdır. */
+    position:absolute;
+    top:0;
+    left:0;
+   }
+
+
+   /* !!!!ÖNEMLİİİİ:bu aşağıda çok fazla ortak özellik var
+   bunlar için global.css'de class açıp 
+   indeks'te yerine koyarak daha temiz kod yazmıs oluruz */
+   .courses .course .course-info .title{
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin-bottom: 0.3rem;
+   }
+   .courses .course .course-info .discription{
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+   }
+   .courses .course .course-info .instructor{
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+   }
+   .courses .course .course-info .rating{
+    font-size: 1rem;
+    color: orangered;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin-bottom: 0.3rem;
+   }
+
+   .courses .course .course-info:hover{
+   background: rgb(24, 19, 19);
+   padding: 1rem;
+   color: #ffff;
+   border: 0.75px solid rgba(5, 9, 14, 0.034);
+   border-radius: 5px;
+   height: 9rem;
+   }
+
+   /* bunun kütüphanesi global.css' de vardır. */
+
+   /* .courses .course .course-info .instructor .icon{
+    background: rgb(255, 136, 0);
+    border: 0.5px solid rgb(255, 136, 0);
+    border-radius: 0.6pc;
+    color: black;
+    } */
+
+    #contact{
+      color:#fff;
+      padding: 1rem;
+    }
+    /*container olusturmamamızın sebebi, container'ı 1100px'de sabit tutmustuk bu contact bölümü için
+    fazla büyük olurdu o yüzden kullanmadık burda */
+    #contact .contact-form{
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      display:flex;
+      flex-direction: column;
+    }
+
+    /*iconlar için */
+    #contact .contact-form ul {
+      list-style-type: none;
+      display:flex;
+      align-self: center;  
+    }
+    #contact .contact-form ul li a{
+    font-size: 3rem;
+     padding: 1rem;
+     margin-top: 5rem; 
+    }
+
+    #contact .contact-form ul li a:hover{
+      background: rgba(0, 128, 0, 0.486);
+      border: 0px solid rgba(0, 128, 0, 0.486);
+      border-radius: 2pc;
+      }
