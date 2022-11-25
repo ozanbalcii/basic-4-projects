@@ -1,0 +1,40 @@
+/* site, telefon ekranlarında kotu duruyor ve
+genişlik bakımından dar oldugu için PC'ye göre
+bu PC için satırda sıralama yaptık, telefonlar
+ için ise sütunda sıralama yapacağız */
+
+ #navbar{
+    /* sütun yönü sıralama*/
+    flex-direction: column;
+    /* linkler çerçeveye cok yaklastı*/
+    padding: 0.5rem;
+    padding-bottom: 0.5rem;
+    /*hover'dan dolayı mobile tarafında bir taşma olabilir önlemek için:*/
+    overflow: hidden;
+    /* mobilede navbarı büyütmek güzel gözüktürür*/
+    height: 80px;
+ }
+
+ #training .items{
+   /* telefonlarda dikey sıralattık*/
+   flex-direction: column;
+ }
+ #training .items .item{
+   /* telefonlarda tüö blogu text'in kapaması için(daha iyi bir
+   götüntü oluyor)*/
+  width: 100%;
+ }
+ 
+
+ .courses .course{
+  /* telde güzel gozuksun diye sütunda sıraladık*/
+  flex-direction: column;
+ }
+
+ #contact .contact-form{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display:flex;
+  flex-direction: column;
+}
+ 
