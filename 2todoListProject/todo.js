@@ -37,15 +37,15 @@ function filterTodos(e) {
             listItem.setAttribute("style", "display:block;");
         }
     });
-}
+};
 
 function deleteToDo(e){
     if(e.target.className === "fa fa-remove"){
     e.target.parentElement.parentElement.remove();
     deleteToDoFromStorage(e.target.parentElement.parentElement.textContent)
     showAlert("success","Todo Başarıyla Silindi");   
-    }
-}
+    };
+};
 
 function deleteToDoFromStorage(deletetodo) {
     let todos = getTodosFromStorage(); 
