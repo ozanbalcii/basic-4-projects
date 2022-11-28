@@ -14,7 +14,7 @@ function eventListeners() {
    secondCardBody.addEventListener("click", deleteToDo);
    filter.addEventListener("keyup", filterTodos);
    clearButton.addEventListener("click", clearAllTodos);
-}
+};
 
 function clearAllTodos(e) {
     if(confirm("Silmek istediğine emin misin*")){
@@ -22,8 +22,8 @@ function clearAllTodos(e) {
             todoList.removeChild(todoList.firstElementChild);
         }
         localStorage.removeItem("todos");
-    }
-}
+    };
+};
 
 function filterTodos(e) {
     const filterValue = e.target.value.toLowerCase();
@@ -32,10 +32,10 @@ function filterTodos(e) {
         const text = listItem.textContent.toLocaleLowerCase();
         if(text.indexOf(filterValue) === -1) {ı.
             listItem.setAttribute("style", "display:none; !important");
-        }
+        };
         else{
             listItem.setAttribute("style", "display:block;");
-        }
+        };
     });
 };
 
@@ -55,14 +55,14 @@ function deleteToDoFromStorage(deletetodo) {
         }
     });
     localStorage.setItem('todos', JSON.stringify(todos));
-}
+};
 
 function localAllTodosToUI(){
     let todos = getTodosFromStorage();
     todos.forEach(function(todo){
         addToDoUI(todo);
     });
-}
+};
 
 function addToDo(e) {
     const newTodo = todoInput.value.trim();
@@ -73,9 +73,9 @@ function addToDo(e) {
              addToDoUI(todo);
              addToDoToStorage(newTodo);
              showAlert("primary","Todo girişiniz başarılı!");
-        }
+        };
     e.preventDefault();
-}
+};
 
 function getTodosFromStorage(){
      let todos;
@@ -84,15 +84,15 @@ function getTodosFromStorage(){
      }
      else{
          todos= JSON.parse(localStorage.getItem("todos"));
-     }
+     };
      return todos;
-}
+};
 
 function addToDoToStorage(newTodo){
     let todos = getTodosFromStorage(); 
     todos.push(newTodo);
     localStorage.setItem("todos", JSON.stringify(todos));
-}
+};
 
 function showAlert(type, message){
     const alert = document.createElement("div");
@@ -102,7 +102,7 @@ function showAlert(type, message){
     setTimeout(function() {
         alert.remove();
     },2000);   
-}
+};
 
 function addToDoUI(newTodo) {  
     const listItem = document.createElement("li");
@@ -115,4 +115,4 @@ function addToDoUI(newTodo) {
     listItem.appendChild(link);
     todoList.appendChild(listItem);
     todoInput.value="";
-}
+};
