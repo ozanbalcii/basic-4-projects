@@ -10,14 +10,12 @@
 .heading-big{
     font-size: 1.75rem;
 }
-
 .bg-dark-blue{
     background: #07121b;
 }
 .bg-light-blue{
     background: #336ea2;
 }
-
 .btn{
     margin-top:1.25rem;
     padding: 0.8rem 3rem;
@@ -33,7 +31,6 @@
     color:#07121b;
     background: #ffff;
 }
-
 .btn-red{
     background: red;
 }
@@ -41,18 +38,15 @@
     color:red;
     background: #ffff;
 }
-
 .btn-block{
     width: 100%;
     text-align: center;
 }
-
 .btn-contact-pre{
     margin-bottom: 2.5rem;
     color: #fff;
     background: #07121b;
 }
-
 .btn-contact-pre:hover{
     color:  #fff;
     background: rgba(128, 255, 0, 0.5);
