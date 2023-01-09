@@ -106,21 +106,25 @@ padding: 0.5rem;
     top:0;
     left:0;
    }
+
    .courses .course .course-info .title{
     letter-spacing: 1px;
     font-weight: 900;
     margin-bottom: 0.3rem;
    }
+
    .courses .course .course-info .discription{
     letter-spacing: 1px;
     font-weight: 400;
     margin-bottom: 0.3rem;
    }
+
    .courses .course .course-info .instructor{
     letter-spacing: 1px;
     font-weight: 500;
     margin-bottom: 0.3rem;
    }
+
    .courses .course .course-info .rating{
     font-size: 1rem;
     color: orangered;
@@ -128,6 +132,7 @@ padding: 0.5rem;
     font-weight: 900;
     margin-bottom: 0.3rem;
    }
+
    .courses .course .course-info:hover{
    background: rgb(24, 19, 19);
    padding: 1rem;
@@ -136,10 +141,12 @@ padding: 0.5rem;
    border-radius: 5px;
    height: 9rem;
    }
+
     #contact{
       color:#fff;
       padding: 1rem;
     }
+
     #contact .contact-form{
       max-width: 700px;
       margin-left: auto;
@@ -152,11 +159,13 @@ padding: 0.5rem;
       display:flex;
       align-self: center;  
     }
+
     #contact .contact-form ul li a{
     font-size: 3rem;
      padding: 1rem;
      margin-top: 5rem; 
     }
+
     #contact .contact-form ul li a:hover{
       background: rgba(0, 128, 0, 0.486);
       border: 0px solid rgba(0, 128, 0, 0.486);
